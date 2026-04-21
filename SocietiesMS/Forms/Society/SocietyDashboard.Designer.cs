@@ -52,10 +52,10 @@ namespace SocietiesMS.Forms.Society
             this.lblWelcome.Size      = new System.Drawing.Size(190, 30);
             this.lblWelcome.Font      = new System.Drawing.Font("Segoe UI", 8.5f);
 
-            MakeSideBtn(this.btnManageMembers, "👥  Manage Members", 105);
-            MakeSideBtn(this.btnManageEvents,  "📅  Manage Events",  155);
-            MakeSideBtn(this.btnTasks,         "✔  Assign Tasks",    205);
-            MakeSideBtn(this.btnReports,       "📋  Reports",         255);
+            UITheme.StyleSidebarBtn(this.btnManageMembers);
+            UITheme.StyleSidebarBtn(this.btnManageEvents);
+            UITheme.StyleSidebarBtn(this.btnTasks);
+            UITheme.StyleSidebarBtn(this.btnReports);
 
             this.btnManageMembers.Click += new System.EventHandler(this.btnManageMembers_Click);
             this.btnManageEvents.Click  += new System.EventHandler(this.btnManageEvents_Click);

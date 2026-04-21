@@ -41,7 +41,7 @@ namespace SocietiesMS.Forms.Admin
             this.lblTitle.Location  = new System.Drawing.Point(20, 15); this.lblTitle.Size = new System.Drawing.Size(400, 35);
 
             // Left grid
-            StyleDGV(this.dgvSocieties);
+            UITheme.StyleGrid(this.dgvSocieties);
             this.dgvSocieties.Location = new System.Drawing.Point(20, 65);
             this.dgvSocieties.Size     = new System.Drawing.Size(590, 540);
             this.dgvSocieties.SelectionChanged += new System.EventHandler(this.dgvSocieties_SelectionChanged);
@@ -77,27 +77,27 @@ namespace SocietiesMS.Forms.Admin
 
             this.btnSave.Text    = "💾  Save";   this.btnSave.Location = new System.Drawing.Point(15, 310);
             this.btnSave.Size    = new System.Drawing.Size(110, 36);
-            StyleBtn(this.btnSave, System.Drawing.Color.FromArgb(59, 130, 246));
+            UITheme.StylePrimaryBtn(this.btnSave);
             this.btnSave.Click  += new System.EventHandler(this.btnSave_Click);
 
             this.btnNew.Text     = "➕  New";    this.btnNew.Location = new System.Drawing.Point(135, 310);
             this.btnNew.Size     = new System.Drawing.Size(100, 36);
-            StyleBtn(this.btnNew,  System.Drawing.Color.FromArgb(34, 197, 94));
+            UITheme.StyleSuccessBtn(this.btnNew);
             this.btnNew.Click   += new System.EventHandler(this.btnNew_Click);
 
             this.btnApprove.Text  = "✅  Approve"; this.btnApprove.Location = new System.Drawing.Point(15, 368);
             this.btnApprove.Size  = new System.Drawing.Size(120, 36);
-            StyleBtn(this.btnApprove, System.Drawing.Color.FromArgb(34, 197, 94));
+            UITheme.StyleSuccessBtn(this.btnApprove);
             this.btnApprove.Click += new System.EventHandler(this.btnApprove_Click);
 
             this.btnSuspend.Text  = "⏸  Suspend"; this.btnSuspend.Location = new System.Drawing.Point(148, 368);
             this.btnSuspend.Size  = new System.Drawing.Size(120, 36);
-            StyleBtn(this.btnSuspend, System.Drawing.Color.FromArgb(234, 179, 8));
+            UITheme.StyleSecondaryBtn(this.btnSuspend);
             this.btnSuspend.Click += new System.EventHandler(this.btnSuspend_Click);
 
             this.btnDelete.Text   = "🗑  Delete";  this.btnDelete.Location = new System.Drawing.Point(281, 368);
             this.btnDelete.Size   = new System.Drawing.Size(120, 36);
-            StyleBtn(this.btnDelete, System.Drawing.Color.FromArgb(239, 68, 68));
+            UITheme.StyleDangerBtn(this.btnDelete);
             this.btnDelete.Click  += new System.EventHandler(this.btnDelete_Click);
 
             this.pnlForm.Controls.AddRange(new System.Windows.Forms.Control[] {
@@ -107,7 +107,7 @@ namespace SocietiesMS.Forms.Admin
 
             this.btnRefresh.Text    = "⟳  Refresh"; this.btnRefresh.Location = new System.Drawing.Point(20, 620);
             this.btnRefresh.Size    = new System.Drawing.Size(120, 36);
-            StyleBtn(this.btnRefresh, System.Drawing.Color.FromArgb(51, 65, 85));
+            UITheme.StyleSecondaryBtn(this.btnRefresh);
             this.btnRefresh.Click  += new System.EventHandler(this.btnRefresh_Click);
 
             this.Controls.AddRange(new System.Windows.Forms.Control[] {
@@ -117,10 +117,6 @@ namespace SocietiesMS.Forms.Admin
             this.pnlForm.ResumeLayout(false);
             this.ResumeLayout(false);
         }
-
-        private void StyleDGV(System.Windows.Forms.DataGridView dgv)
-        { dgv.BackgroundColor = System.Drawing.Color.FromArgb(30, 41, 59); dgv.GridColor = System.Drawing.Color.FromArgb(51, 65, 85); dgv.DefaultCellStyle.BackColor = System.Drawing.Color.FromArgb(30, 41, 59); dgv.DefaultCellStyle.ForeColor = System.Drawing.Color.FromArgb(226, 232, 240); dgv.ColumnHeadersDefaultCellStyle.BackColor = System.Drawing.Color.FromArgb(51, 65, 85); dgv.ColumnHeadersDefaultCellStyle.ForeColor = System.Drawing.Color.White; dgv.ColumnHeadersDefaultCellStyle.Font = new System.Drawing.Font("Segoe UI", 9.5f, System.Drawing.FontStyle.Bold); dgv.EnableHeadersVisualStyles = false; dgv.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect; dgv.MultiSelect = false; dgv.ReadOnly = true; dgv.AllowUserToAddRows = false; dgv.RowHeadersVisible = false; dgv.BorderStyle = System.Windows.Forms.BorderStyle.None; dgv.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill; }
-        private void StyleBtn(System.Windows.Forms.Button btn, System.Drawing.Color c) { btn.BackColor = c; btn.ForeColor = System.Drawing.Color.White; btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat; btn.FlatAppearance.BorderSize = 0; btn.Font = new System.Drawing.Font("Segoe UI", 9.5f); btn.Cursor = System.Windows.Forms.Cursors.Hand; }
         private void MakeField(System.Windows.Forms.Label lbl, string text, int x, int y) { lbl.Text = text; lbl.Location = new System.Drawing.Point(x, y); lbl.Size = new System.Drawing.Size(385, 20); lbl.ForeColor = System.Drawing.Color.FromArgb(148, 163, 184); }
         private void MakeTxt(System.Windows.Forms.TextBox txt, int x, int y) { txt.Location = new System.Drawing.Point(x, y); txt.Size = new System.Drawing.Size(385, 28); txt.BackColor = System.Drawing.Color.FromArgb(51, 65, 85); txt.ForeColor = System.Drawing.Color.White; txt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle; }
 

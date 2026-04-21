@@ -27,7 +27,7 @@ namespace SocietiesMS.Forms.Student
             this.lblTitle.Location  = new System.Drawing.Point(20, 15);
             this.lblTitle.Size      = new System.Drawing.Size(400, 35);
 
-            StyleDGV(this.dgvSocieties);
+            UITheme.StyleGrid(this.dgvSocieties);
             this.dgvSocieties.Location = new System.Drawing.Point(20, 65);
             this.dgvSocieties.Size     = new System.Drawing.Size(770, 380);
 
@@ -47,26 +47,6 @@ namespace SocietiesMS.Forms.Student
                 this.lblTitle, this.dgvSocieties, this.btnApply, this.btnRefresh });
             ((System.ComponentModel.ISupportInitialize)(this.dgvSocieties)).EndInit();
             this.ResumeLayout(false);
-        }
-
-        private void StyleDGV(System.Windows.Forms.DataGridView dgv)
-        {
-            dgv.BackgroundColor              = System.Drawing.Color.FromArgb(30, 41, 59);
-            dgv.GridColor                    = System.Drawing.Color.FromArgb(51, 65, 85);
-            dgv.DefaultCellStyle.BackColor   = System.Drawing.Color.FromArgb(30, 41, 59);
-            dgv.DefaultCellStyle.ForeColor   = System.Drawing.Color.FromArgb(226, 232, 240);
-            dgv.DefaultCellStyle.Font        = new System.Drawing.Font("Segoe UI", 9.5f);
-            dgv.ColumnHeadersDefaultCellStyle.BackColor = System.Drawing.Color.FromArgb(51, 65, 85);
-            dgv.ColumnHeadersDefaultCellStyle.ForeColor = System.Drawing.Color.White;
-            dgv.ColumnHeadersDefaultCellStyle.Font      = new System.Drawing.Font("Segoe UI", 9.5f, System.Drawing.FontStyle.Bold);
-            dgv.EnableHeadersVisualStyles    = false;
-            dgv.SelectionMode                = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            dgv.MultiSelect                  = false;
-            dgv.ReadOnly                     = true;
-            dgv.AllowUserToAddRows           = false;
-            dgv.RowHeadersVisible            = false;
-            dgv.BorderStyle                  = System.Windows.Forms.BorderStyle.None;
-            dgv.AutoSizeColumnsMode          = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
         }
 
         private void StyleButton(System.Windows.Forms.Button btn, System.Drawing.Color color)

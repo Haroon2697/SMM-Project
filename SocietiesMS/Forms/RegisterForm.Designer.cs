@@ -101,12 +101,10 @@ namespace SocietiesMS.Forms
         private void SetupTextBox(System.Windows.Forms.TextBox txt, string placeholder, int x, int y, bool isPassword)
         {
             txt.Location        = new System.Drawing.Point(x, y);
-            txt.Size            = new System.Drawing.Size(340, 30);
-            txt.BackColor       = System.Drawing.Color.FromArgb(51, 65, 85);
-            txt.ForeColor       = System.Drawing.Color.White;
-            txt.BorderStyle     = System.Windows.Forms.BorderStyle.FixedSingle;
-            txt.Font            = new System.Drawing.Font("Segoe UI", 10f);
-            // PlaceholderText not available in .NET Framework 4.8
+            txt.Size            = new System.Drawing.Size(340, 28);
+            System.Windows.Forms.Padding padding = txt.Margin;
+            padding.Top = 10;
+            UITheme.StyleTextBox(txt);
             if (isPassword) txt.UseSystemPasswordChar = true;
         }
 

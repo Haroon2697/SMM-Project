@@ -46,7 +46,7 @@ namespace SocietiesMS.Forms.Admin
             this.lblBreakdown.Location  = new System.Drawing.Point(20, 300); this.lblBreakdown.Size = new System.Drawing.Size(400, 26);
 
             // Breakdown DGV
-            StyleDGV(this.dgvBreakdown);
+            UITheme.StyleGrid(this.dgvBreakdown);
             this.dgvBreakdown.Location = new System.Drawing.Point(20, 332);
             this.dgvBreakdown.Size     = new System.Drawing.Size(875, 300);
 
@@ -54,13 +54,13 @@ namespace SocietiesMS.Forms.Admin
             this.btnRefresh.Text    = "⟳  Refresh";
             this.btnRefresh.Location= new System.Drawing.Point(20, 648);
             this.btnRefresh.Size    = new System.Drawing.Size(130, 38);
-            StyleBtn(this.btnRefresh, System.Drawing.Color.FromArgb(51, 65, 85));
+            UITheme.StyleSecondaryBtn(this.btnRefresh);
             this.btnRefresh.Click  += new System.EventHandler(this.btnRefresh_Click);
 
             this.btnCopy.Text    = "📋  Copy Summary";
             this.btnCopy.Location= new System.Drawing.Point(165, 648);
             this.btnCopy.Size    = new System.Drawing.Size(160, 38);
-            StyleBtn(this.btnCopy, System.Drawing.Color.FromArgb(59, 130, 246));
+            UITheme.StylePrimaryBtn(this.btnCopy);
             this.btnCopy.Click  += new System.EventHandler(this.btnCopy_Click);
 
             this.Controls.AddRange(new System.Windows.Forms.Control[] {
@@ -69,10 +69,6 @@ namespace SocietiesMS.Forms.Admin
             ((System.ComponentModel.ISupportInitialize)(this.dgvBreakdown)).EndInit();
             this.ResumeLayout(false);
         }
-
-        private void StyleDGV(System.Windows.Forms.DataGridView dgv)
-        { dgv.BackgroundColor = System.Drawing.Color.FromArgb(30, 41, 59); dgv.GridColor = System.Drawing.Color.FromArgb(51, 65, 85); dgv.DefaultCellStyle.BackColor = System.Drawing.Color.FromArgb(30, 41, 59); dgv.DefaultCellStyle.ForeColor = System.Drawing.Color.FromArgb(226, 232, 240); dgv.ColumnHeadersDefaultCellStyle.BackColor = System.Drawing.Color.FromArgb(51, 65, 85); dgv.ColumnHeadersDefaultCellStyle.ForeColor = System.Drawing.Color.White; dgv.ColumnHeadersDefaultCellStyle.Font = new System.Drawing.Font("Segoe UI", 9.5f, System.Drawing.FontStyle.Bold); dgv.EnableHeadersVisualStyles = false; dgv.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect; dgv.MultiSelect = false; dgv.ReadOnly = true; dgv.AllowUserToAddRows = false; dgv.RowHeadersVisible = false; dgv.BorderStyle = System.Windows.Forms.BorderStyle.None; dgv.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill; }
-        private void StyleBtn(System.Windows.Forms.Button btn, System.Drawing.Color c) { btn.BackColor = c; btn.ForeColor = System.Drawing.Color.White; btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat; btn.FlatAppearance.BorderSize = 0; btn.Font = new System.Drawing.Font("Segoe UI", 9.5f); btn.Cursor = System.Windows.Forms.Cursors.Hand; }
 
         private System.Windows.Forms.Label        lblTitle, lblBreakdown;
         private System.Windows.Forms.TextBox      txtSummary;

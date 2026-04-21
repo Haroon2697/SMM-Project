@@ -56,10 +56,10 @@ namespace SocietiesMS.Forms.Admin
             this.lblWelcome.Size      = new System.Drawing.Size(190, 30);
             this.lblWelcome.Font      = new System.Drawing.Font("Segoe UI", 8.5f);
 
-            MakeSideBtn(this.btnManageStudents,  "👨‍🎓  Manage Students",  105);
-            MakeSideBtn(this.btnManageSocieties, "🏛   Manage Societies", 155);
-            MakeSideBtn(this.btnApproveEvents,   "📅  Approve Events",    205);
-            MakeSideBtn(this.btnReports,         "📊  Reports",            255);
+            UITheme.StyleSidebarBtn(this.btnManageStudents);
+            UITheme.StyleSidebarBtn(this.btnManageSocieties);
+            UITheme.StyleSidebarBtn(this.btnApproveEvents);
+            UITheme.StyleSidebarBtn(this.btnReports);
 
             this.btnManageStudents.Click  += new System.EventHandler(this.btnManageStudents_Click);
             this.btnManageSocieties.Click += new System.EventHandler(this.btnManageSocieties_Click);
@@ -115,7 +115,7 @@ namespace SocietiesMS.Forms.Admin
 
             this.btnRefresh.Text    = "⟳  Refresh Stats";
             this.btnRefresh.Location= new System.Drawing.Point(30, 328); this.btnRefresh.Size = new System.Drawing.Size(160, 38);
-            StyleBtn(this.btnRefresh, System.Drawing.Color.FromArgb(51, 65, 85));
+            UITheme.StyleSecondaryBtn(this.btnRefresh);
             this.btnRefresh.Click  += new System.EventHandler(this.btnRefresh_Click);
 
             this.pnlContent.Controls.AddRange(new System.Windows.Forms.Control[] {
@@ -132,7 +132,6 @@ namespace SocietiesMS.Forms.Admin
 
         private void MakeSideBtn(System.Windows.Forms.Button btn, string text, int top)
         { btn.Text = text; btn.Location = new System.Drawing.Point(15, top); btn.Size = new System.Drawing.Size(190, 40); btn.BackColor = System.Drawing.Color.FromArgb(51, 65, 85); btn.ForeColor = System.Drawing.Color.White; btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat; btn.FlatAppearance.BorderSize = 0; btn.Font = new System.Drawing.Font("Segoe UI", 9.5f); btn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft; btn.Cursor = System.Windows.Forms.Cursors.Hand; }
-        private void StyleBtn(System.Windows.Forms.Button btn, System.Drawing.Color c) { btn.BackColor = c; btn.ForeColor = System.Drawing.Color.White; btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat; btn.FlatAppearance.BorderSize = 0; btn.Font = new System.Drawing.Font("Segoe UI", 9.5f); btn.Cursor = System.Windows.Forms.Cursors.Hand; }
 
         private System.Windows.Forms.Panel  pnlSidebar, pnlContent, pnlStats;
         private System.Windows.Forms.Label  lblAppName, lblWelcome, lblDashTitle, lblAdminBadge;
