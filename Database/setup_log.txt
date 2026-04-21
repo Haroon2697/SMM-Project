@@ -1,0 +1,12 @@
+Changed database context to 'master'.
+Changed database context to 'SocietiesMS'.
+
+(5 rows affected)
+
+(5 rows affected)
+
+(4 rows affected)
+
+(3 rows affected)
+
+(3 rows affected)
