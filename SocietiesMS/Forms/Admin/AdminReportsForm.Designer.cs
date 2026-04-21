@@ -18,6 +18,7 @@ namespace SocietiesMS.Forms.Admin
             this.SuspendLayout();
 
             this.Text          = "University Report";
+            this.ShowIcon = false;
             this.Size          = new System.Drawing.Size(920, 720);
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.BackColor     = System.Drawing.Color.FromArgb(15, 23, 42);

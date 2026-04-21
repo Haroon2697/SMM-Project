@@ -34,6 +34,7 @@ namespace SocietiesMS.Forms.Admin
             this.SuspendLayout();
 
             this.Text          = "Admin Dashboard — FAST Societies MS";
+            this.ShowIcon = false;
             this.Size          = new System.Drawing.Size(900, 620);
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.BackColor     = System.Drawing.Color.FromArgb(15, 23, 42);

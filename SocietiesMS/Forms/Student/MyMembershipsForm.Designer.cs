@@ -16,6 +16,7 @@ namespace SocietiesMS.Forms.Student
             this.SuspendLayout();
 
             this.Text          = "My Memberships";
+            this.ShowIcon = false;
             this.Size          = new System.Drawing.Size(700, 480);
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.BackColor     = System.Drawing.Color.FromArgb(15, 23, 42);

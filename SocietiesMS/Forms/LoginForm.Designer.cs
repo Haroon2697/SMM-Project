@@ -28,6 +28,7 @@ namespace SocietiesMS.Forms
 
             // Form
             this.Text            = "FAST Societies MS — Login";
+            this.ShowIcon = false;
             this.Size            = new System.Drawing.Size(480, 560);
             this.StartPosition   = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;

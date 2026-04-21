@@ -19,6 +19,7 @@ namespace SocietiesMS.Forms.Admin
             this.SuspendLayout();
 
             this.Text          = "Manage Students";
+            this.ShowIcon = false;
             this.Size          = new System.Drawing.Size(860, 560);
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.BackColor     = System.Drawing.Color.FromArgb(15, 23, 42);

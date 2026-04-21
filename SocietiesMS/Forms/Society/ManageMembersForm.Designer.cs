@@ -22,6 +22,7 @@ namespace SocietiesMS.Forms.Society
             this.SuspendLayout();
 
             this.Text          = "Manage Members";
+            this.ShowIcon = false;
             this.Size          = new System.Drawing.Size(860, 680);
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.BackColor     = System.Drawing.Color.FromArgb(15, 23, 42);

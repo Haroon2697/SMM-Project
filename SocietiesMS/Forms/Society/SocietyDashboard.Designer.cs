@@ -30,6 +30,7 @@ namespace SocietiesMS.Forms.Society
             this.SuspendLayout();
 
             this.Text          = "Society Dashboard — FAST Societies MS";
+            this.ShowIcon = false;
             this.Size          = new System.Drawing.Size(900, 620);
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.BackColor     = System.Drawing.Color.FromArgb(15, 23, 42);

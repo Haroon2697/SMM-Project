@@ -28,6 +28,7 @@ namespace SocietiesMS.Forms
             this.SuspendLayout();
 
             this.Text            = "FAST Societies MS — Register";
+            this.ShowIcon = false;
             this.Size            = new System.Drawing.Size(480, 580);
             this.StartPosition   = System.Windows.Forms.FormStartPosition.CenterParent;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;

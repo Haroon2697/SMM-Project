@@ -33,6 +33,7 @@ namespace SocietiesMS.Forms.Society
             this.SuspendLayout();
 
             this.Text          = "Manage Events";
+            this.ShowIcon = false;
             this.Size          = new System.Drawing.Size(1060, 680);
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.BackColor     = System.Drawing.Color.FromArgb(15, 23, 42);
